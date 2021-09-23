@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IT=edge">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../pages-practice/css/styles-practice.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <title> Cripto Guía </title>
+    </head> 
+    <body>
+        <header>
+            <div class="container content-flex">
+                <!-- Logo  -->
+            <img src="https://www.edicioneslogos.com/web/image/res.company/3/logo?unique=ac1bf0f" alt="" width="100">
+            <!-- Menu de navegación -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index-practice.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="../practica/pages-practice/documents-practice.html">Documentación</a>
+                    </li>
+                    <li>
+                        <a href="../practica/pages-practice/news-practice.html">Noticias</a>
+                    </li>
+                    <li>
+                        <a href="../practica/pages-practice/contact-practice.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+
+    <section>
+        <form class="container contact">
+        <h3>Contactame</h3>
+
+            <div>
+                <p>Nombre*</p>
+                <input type="text" placeholder="Ejemplo: Matías">
+            </div>
+
+            <div>
+                <p>Apellido*</p>
+                <input type="text" placeholder="Ejemplo: Páez">
+            </div>
+
+            <div>
+                <p>Correo Electrónico*</p>
+                <input type="text" placeholder="Ejemplo@email.com">
+            </div>
+
+            <div>
+                <p>Género*</p>
+                <select name="genero">
+                <option selected="selected" value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                </select>
+            
+                </div>
+            
+            <div class="">
+                <p>¿Eres mayor de edad?*</p>
+                <div class="content-flex inline">
+                    <input type="radio" name="edad" value="Si"/>
+                    <label>Mayor de 18 años</label>
+                    <input type="radio" name="edad" value="No"/>
+                    <label>Menor de 18 años</label>
+                </div>
+            </div>
+
+            <div>
+                <p>Mensaje</p>
+                <textarea cols="20" name="comments" rows="5" placeholder="Escribe algo aquí..."></textarea>
+            </div>
+
+            <div>
+                <input type="reset" value="Borrar">
+                <input type="button" value="Enviar">
+            </div>
+        </form>
+    </section>
+    
+</html>
