@@ -157,7 +157,7 @@ footer {
       &.#{nth($color,1)} {
         svg{
           &:hover{
-            color: #{$red};
+            color:nth($color,2);
           }
         }
       }

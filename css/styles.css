@@ -36,10 +36,7 @@ article {
   color: #fff;
   padding: 12px 18px;
   border-radius: 30px;
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
   transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
   display: block;
   width: 100px;
   text-align: center;
@@ -49,7 +46,6 @@ article {
 .button:hover {
   background-color: #fff;
   color: #000;
-  -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
 
@@ -98,7 +94,6 @@ header img {
   height: 2px;
   background-color: #fff;
   margin: 0 auto;
-  -webkit-transition: .3s;
   transition: .3s;
   content: "";
 }
@@ -128,20 +123,18 @@ footer {
 }
 
 footer .copyright p {
-  margin: 0;
+  margin-bottom: 10px;
 }
 
 footer .ico {
   width: 24px;
   height: 24px;
   margin-left: 10px;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 footer .ico:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 footer .ico svg {
@@ -149,15 +142,15 @@ footer .ico svg {
   color: white;
 }
 
-footer .twitter svg:hover {
+footer .ico.twitter svg:hover {
   color: #00acee;
 }
 
-footer .instagram svg:hover {
-  color: yellow;
+footer .ico.instagram svg:hover {
+  color: #008000;
 }
 
-footer .git svg:hover {
-  color: violet;
+footer .ico.git svg:hover {
+  color: black;
 }
 /*# sourceMappingURL=styles.css.map */
