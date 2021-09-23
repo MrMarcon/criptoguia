@@ -151,8 +151,6 @@ footer {
       color: white;
     }
 
-    // Desafio Sass complementario
-
     @each $color in $rrss-colors {
       &.#{nth($color,1)} {
         svg{
