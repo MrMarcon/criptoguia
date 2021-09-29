@@ -39,21 +39,22 @@ article {
   padding: 12px 18px;
   border-radius: 30px;
   transition: transform .3s;
-  display: block;
-  width: 100px;
+  display: inline-block;
   text-align: center;
   text-decoration: none;
 
   &:hover {
     background-color: #fff;
     color: #000;
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
     transform: scale(1.2);
   }
 }
+
+
+.text-p{
+    color: #cacaca;
+  }
+
 
 .card {
   padding: 1em;
@@ -119,11 +120,57 @@ header .nav-link {
 }
 
 #beneficios{
-  max-width: 70%;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  margin-bottom: 2em;
+
+lottie-player{
+  width:60%;
+  display: block;
+  margin: 0 auto;
 }
+
+}
+
+
+.conceptos .card{
+  img{
+    margin-bottom: 1em;
+  }
+
+  a{
+    text-decoration: none;
+    color: #B362F7;
+  }
+}
+
+.noticia-individual {
+    border-radius: 8px;
+    overflow: hidden;
+
+    .img-card {
+      overflow: hidden;
+      img {
+        transform: scale(3);
+      }
+    }
+    .text-details {
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+  }
 
 #contact .container{
   padding: 2em;
+}
+
+.error-text.text-center {
+  background-image: url(../archives/error-404.png);
+  background-position: center center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  padding-top: 6em;
+  padding-bottom: 6em;
 }
 
 footer {
@@ -163,3 +210,5 @@ footer {
   }
 
 }
+
+
