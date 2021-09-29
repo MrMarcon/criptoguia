@@ -37,8 +37,7 @@ article {
   padding: 12px 18px;
   border-radius: 30px;
   transition: transform .3s;
-  display: block;
-  width: 100px;
+  display: inline-block;
   text-align: center;
   text-decoration: none;
 }
@@ -47,6 +46,10 @@ article {
   background-color: #fff;
   color: #000;
   transform: scale(1.2);
+}
+
+.container .text-p {
+  color: #cacaca;
 }
 
 .card {
@@ -111,11 +114,55 @@ header .nav-link:hover, header .nav-link:focus {
 }
 
 #beneficios {
-  max-width: 70%;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  margin-bottom: 2em;
+}
+
+#beneficios lottie-player {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+.conceptos .card img {
+  margin-bottom: 1em;
+}
+
+.conceptos .card a {
+  text-decoration: none;
+  color: #B362F7;
+}
+
+.noticia-individual {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.noticia-individual .img-card {
+  overflow: hidden;
+}
+
+.noticia-individual .img-card img {
+  transform: scale(3);
+}
+
+.noticia-individual .text-details {
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 #contact .container {
   padding: 2em;
+}
+
+.error-text.text-center {
+  background-image: url(../archives/error-404.png);
+  background-position: center center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  padding-top: 6em;
+  padding-bottom: 6em;
 }
 
 footer {
