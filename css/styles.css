@@ -17,13 +17,38 @@ header {
   margin-bottom: 4em;
 }
 
+.menu-mobile svg {
+  width: 24x;
+  height: 24px;
+}
+
+.menu-mobile-options {
+  background: black;
+  z-index: 5;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+}
+
+.menu-mobile-options li {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.menu-mobile-options li a {
+  padding: 0;
+}
+
+.menu-mobile-options svg {
+  width: 16px;
+}
+
 h1 {
   font-size: 64px;
   max-width: 500px;
-}
-
-main {
-  height: 400px;
 }
 
 article {
@@ -48,7 +73,7 @@ article {
   transform: scale(1.2);
 }
 
-.container .text-p {
+.text-p {
   color: #cacaca;
 }
 
@@ -199,5 +224,17 @@ footer .ico.instagram svg:hover {
 
 footer .ico.git svg:hover {
   color: black;
+}
+
+@media (min-width: 1000px) {
+  .menu-mobile, .menu-mobile-options {
+    display: none;
+  }
+}
+
+@media (max-width: 999px) {
+  .menu-desktop {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
