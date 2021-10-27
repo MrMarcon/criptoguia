@@ -11,40 +11,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Urbanist:wght@100;500;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
     
     <title>Noticias sobre criptos </title>
 </head> 
 <body>
     <header class="container-fluid header">
         <div class="container">
-            <div class="row d-flex align-items-center">
-                <div class="col-12 col-lg-2">
+            <div class="row d-flex align-items-center justify-content-between">
+                <div class="col-6 col-lg-2">
                     <!-- Logo  -->
-                    <a href="../index.html"><img src="../archives/logo-cryptoguia-color.png" alt="" class="img-fluid"></a>
+                    <a href="../index.html"><img src="/archives/logo-cryptoguia-color.png" alt="" class="img-fluid"></a>
                 </div>
-                <div class="col-12 col-lg-10">
+                <div class="col-2 menu-mobile">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis-v" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512" class="svg-inline--fa fa-ellipsis-v fa-w-6 fa-2x"><path fill="currentColor" d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" class=""></path></svg>
+                </div>
+                <div class="col-12 menu-mobile-options justify-content-center align-items-center">
+                    <nav class="text-center">
+                        <ul class="nav flex-column justify-content-end d-flex">
+                            <li class="nav-item close-menu">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" class="svg-inline--fa fa-times fa-w-11 fa-2x"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" class=""></path></svg>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/index.html" class="nav-link">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/pages/documents.html" class="nav-link">Documentación</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/pages/news.html" class="nav-link">Noticias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/pages/contact.html" class="nav-link">Contacto</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="col-10 menu-desktop">
                     <!-- Menu de navegación -->
                     <nav class="">
-                        <ul class="nav justify-content-start justify-content-lg-end d-flex align-items-center">
+                        <ul class="nav justify-content-end d-flex align-items-center">
                             <li class="nav--item">
-                                <a class="nav-link" href="../index.html">Inicio</a>
-                            </li>
-                        
-                            <li class="submenu__content nav--item dropdown">
-                                <a href="documents.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Documentación</a>
-                                <ul class="dropdown-menu">
-                                    <li class="dropdown-item">¿Qué es Bitcoin?</li>
-                                    <li class="dropdown-item">¿Cómo comprar Bitcoin?</li>
-                                    <li class="dropdown-item">¿Qué es una criptomoneda?</li>
-                                </ul>
+                                <a class="nav-link" href="/index.html">Inicio</a>
                             </li>
                         
                             <li class="nav--item">
-                                <a class="nav-link" href="news.html">Noticias</a>
+                                <a class="nav-link" href="/pages/documents.html">Documentación</a>
                             </li>
                         
                             <li class="nav--item">
-                                <a class="nav-link" href="contact.html">Contacto</a>
+                                <a class="nav-link" href="/pages/news.html">Noticias</a>
+                            </li>
+                        
+                            <li class="nav--item">
+                                <a class="nav-link" href="/pages/contact.html">Contacto</a>
                             </li>
                         
                         </ul>
@@ -125,15 +147,18 @@
                 </div>
                 <div class="col-12 col-lg-6">
                     <ul class="nav justify-content-center pb-3 mb-3">
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Inicio</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Documentación</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Noticias</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contacto</a></li>
+                        <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+                        <li class="nav-item"><a href="/pages/documents.html" class="nav-link px-2 text-muted">Documentación</a></li>
+                        <li class="nav-item"><a href="/pages/news.html" class="nav-link px-2 text-muted">Noticias</a></li>
+                        <li class="nav-item"><a href="/pages/contact.html" class="nav-link px-2 text-muted">Contacto</a></li>
                      </ul>
                 </div>
             </div>
         </div>
       </footer>
 </body>
-
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+<script src="../js/owl.carousel.js"></script>
+<script src="/js/custome.js"></script>
 </html>
